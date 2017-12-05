@@ -1,16 +1,6 @@
 
 
-***
-*    $$|  |$$ |$$| 
-*    $$|  |$$ |$$|                                  
-*    $$|  |$$ |$$|     $$| |$$  |$$$$$$|  |$$$$$$|  
-*    $$$$$$$$ |$$|     $$| |$$ |$$ __ $$|  ____$$|  
-*    $$|  |$$ |$$|     $$| |$$ |$$|  |$$| $$$$$$$|  
-*    $$|  |$$ |$$|___  $$|_|$$ |$$|  |$$| $$___$$|  
-*    $$|  |$$ |$$$$$$$| $$$$$  |$$|  |$$| $$$$$$$| 
-*    ---------------------------------------------- 
-* Code by: En1gm4
-***
+ #HLuna
 
 HLuna es un pack de herramientas para pentesting, por ahora solo cuenta con una herramienta pero con el tiempo se ira actualizando esta programado en c++
 
