@@ -63,51 +63,52 @@ void diccionario(){
 		 generada = entrada[num];
 		 num=rand()%contador;
 		 int random=rand()%5;
-		 
-		 
-		 
-		 if(random==0)
-			 {
+		 	char mas3;
+		  string cadenas="";
+			int mas =0;			
+				switch(random){
 			 
-		 generada+=entrada[num];
-		 salida <<  generada  << endl;
-		}
-		 
-		 
-		 if(random ==1){
+			 case 0:
+			 generada+=entrada[num];
+			 break;
 			 
-			int acomp=rand()%100;
-			string cadena = static_cast<std::ostringstream*>(&(std::ostringstream() << acomp))->str();
-			generada+=entrada[num]+cadena;
-			  
-			salida <<  generada  << endl;
+			 case 1:
+			mas=rand()%100;
+			cadenas = static_cast<std::ostringstream*>(&(std::ostringstream() << mas))->str();
+			generada+=entrada[num]+cadenas; 
+			 break;
+		
+		
+		case 2:
+		
+		mas3 = 33 + rand() % (126 - 33);
+		  generada+=entrada[num]+mas3;
+		break;
+			
+			
+	
+	
+		case 3:
+		 mas=rand()%100;
+			cadenas = static_cast<std::ostringstream*>(&(std::ostringstream() << mas))->str();
+			 generada+=cadenas;
+		
+		break;
+			
+			case 4:
+			
+				mas= 33 + rand() % (132 - 33);
+			 	cadenas = static_cast<std::ostringstream*>(&(std::ostringstream() << mas))->str();
+					
+			 generada+=cadenas;
+			break;
+			
+			 
 			 }
 		 
 		 
-		 if(random==2){
-			 char mas = 33 + rand() % (126 - 33);
-			  generada+=entrada[num]+mas;
-		 salida <<  generada  << endl;
-			 }
-			 
-			 
-			 
-		 if(random==3){
-			 int acomp=rand()%100;
-			string cadena = static_cast<std::ostringstream*>(&(std::ostringstream() << acomp))->str();
-			 generada+=cadena;
-			 }
-		 
-		 
-		 if(random==4){
-			 char mas = 33 + rand() % (126 - 33);
-			 
-			 generada+=mas;
-			 
-			 
-			 }
-			 
-			 
+		 			salida << generada << endl;
+
 		}
 		salida.close();
 		cout << "-------------------" << endl;
